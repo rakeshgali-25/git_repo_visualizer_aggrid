@@ -1,0 +1,31 @@
+.networkgraph-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 12px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+  background: white;
+  box-sizing: border-box;
+  /* center contents vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+}
+
+/* inner container holds the chart and controls its % height */
+.networkgraph-inner {
+  width: 100%;
+  height: 100%;
+  max-height: 720px;
+  /* Since chart height is 75% of wrapper, this ensures a balanced area */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* smaller tweaks for data labels */
+.highcharts-data-label text {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
